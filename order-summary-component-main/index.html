@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      html {
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 16px;
+        font-family: 'Red Hat Display', sans-serif;
+        background: url('images/pattern-background-desktop.svg') no-repeat;
+        background-size: contain;
+
+        /* Neutral */
+        --very-pale-blue: hsl(225, 100%, 98%);
+        --desaturated-blue: hsl(224, 23%, 55%);
+        --dark-blue: hsl(223, 47%, 23%);
+
+        /* Primary */
+        --pale-blue: hsl(225, 100%, 94%);
+        --bright-blue: hsl(245, 75%, 52%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .panel {
+        width: 450px;
+        margin: 10em 0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0px 10px 40px var(--desaturated-blue);
+      }
+      .panel img {
+        object-fit: contain;
+        border-radius: 10px 10px 0 0;
+      }
+      .paragraph {
+        color: var(--desaturated-blue);
+        display: inline;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+      }
+      .paragraph h1 {
+        color: var(--dark-blue);
+        font-weight: 900;
+      }
+      .plan {
+        background-color: var(--very-pale-blue);
+        padding: 1.5em;
+        margin: 1em 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      .plan div {
+        flex: 1;
+        display: flex;
+        justify-content: left;
+        padding-left: 0.5em;
+      }
+      .plan a {
+        color: var(--bright-blue);
+        font-weight: 700;
+      }
+      .plan a:hover {
+        text-decoration: none;
+      }
+
+      .plan-details {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .plan-name {
+        color: var(--dark-blue);
+        font-weight: 900;
+        font-size: 1.2em;
+      }
+      .plan-value {
+        color: var(--desaturated-blue);
+        font-size: 1.2em;
+      }
+      .primary-button {
+        color: white;
+        background: none;
+        border: none;
+        background-color: var(--bright-blue);
+        margin: 0 2em;
+        padding: 1em;
+        box-shadow: 0px 10px 20px var(--pale-blue);
+        font-weight: 900;
+        border-radius: 10px;
+      }
+      .primary-button:hover {
+        filter: brightness(1.5);
+      }
+      .secondary-button {
+        text-decoration: none;
+        display: block;
+        color: var(--desaturated-blue);
+        margin: 0 auto 2em auto;
+        padding: 1em;
+        font-weight: 900;
+      }
+      .secondary-button:hover {
+        color: var(--dark-blue);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panel">
+      <img src="images/illustration-hero.svg" alt="Illustration Hero" />
+
+      <div class="paragraph">
+        <h1>Order Summary</h1>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+      </div>
+
+      <div class="plan">
+        <img src="images/icon-music.svg" alt="Music icon" />
+        <div class="plan-details">
+          <div class="plan-name">Annual Plan</div>
+          <div class="plan-value">$59.99/year</div>
+        </div>
+        <a href="#">Change</a>
+      </div>
+      <button class="primary-button">Proceed to Payment</button>
+      <a href="#" class="secondary-button">Cancel Order</a>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Vikram Reddy</a>.
+      </div>
+    </div>
+  </body>
+</html>
